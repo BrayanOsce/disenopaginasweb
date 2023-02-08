@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        <LINK rel=styleSheet href="./styles.css" type="text/css" media=screen>
+            <script src="script.js"></script>
+    <title > 
+        Inscripción
+    </title>
+</head>
+  
+<body>
+    <h1 id="title"> Formulario de inscripción </h1> <!-- Historia de Usuario #1 -->
+    <p id="description"> Gracias por ser parte de nosotros </p> <!-- Historia de Usuario #2 -->
+    <!-- Create Form -->
+    <form id="survey-form"> <!-- Historia de Usuario #3 -->
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="name-label"> <!-- Historia de Usuario #4 -->
+                <strong>Nombre</strong>
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" required
+                   id="name"
+                   placeholder="Ingresa tu nombre" />
+        </div>
+       
+        <div class="form-control">
+            <label for="email" id="email-label"> 
+            <strong>Correo electrónico</strong>
+            </label> 
+ 
+            <!-- Input Type Email-->
+            <input type="email" required
+                   id="email"
+                   placeholder="Ingresa tu correo electrónico" /> <!-- Historia de Usuario #5,6 -->
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="number-label"> <!-- Historia de Usuario #10 -->
+            <strong>Edad</strong>
+            </label> 
+ 
+            <!-- Input Type Text -->
+            <input type="number" min="15" step="1" max="80" 
+                   id="number"
+                   placeholder="Ingresa tu edad" /> <!-- Historia de Usuario #7,8,9,11 -->
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-dropdown">
+            <strong>¿Cuál de estas opciones te describe?</strong>
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="dropdown"><!-- Historia de Usuario #12 -->
+                <option value="student">Estudiante</option>
+                <option value="intern">Pasante</option>
+                <option value="professional">
+                    Profesional
+                </option>
+                <option value="other">Otro</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+            <strong>¿Recomendarias nuestra página a tus amigos?</strong>
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" value="one"
+                       id="recommed-1"
+                       name="recommed" checked>Sí</input>
+            </label>
+            <label for="recommed-2"> 
+                <input type="radio" value="two"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" value="three"
+                       id="recommed-3"
+                       name="recommed">Quizás</input><!-- Historia de Usuario #13 -->
+            </label>
+        </div><br>
+  
+        <div class="form-control">
+            <label><strong>Seleccione los campos de conocimiento en los que está interesado:</strong>
+                <br><small>(Todos los que apliquen)</small>
+            </label><br>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" value="first_checkbox" checked
+                       name="inp">Manejo de plagas</input></label>
+            <label for="inp-2">
+                <input type="checkbox" value="second_checkbox"
+                       name="inp">Manejo de enfermedades</input></label>
+            <label for="inp-3">
+                <input type="checkbox" value="third_checkbox"
+                       name="inp">Genética</input></label>
+            <label for="inp-4">
+                <input type="checkbox" value="fourth_checkbox"
+                       name="inp">Fisiología vegetal</input></label>
+            <label for="inp-5">
+                <input type="checkbox" value="fifth_checkbox"
+                       name="inp">Manejo de suelos</input></label>
+            <label for="inp-6">
+                <input type="checkbox" value="sixth_checkbox"
+                       name="inp">Climatología</input></label>
+            <label for="inp-7">
+                <input type="checkbox" value="seventh_checkbox"
+                       name="inp">Fertilización</input></label>
+            <label for="inp-8">
+                <input type="checkbox" value="eighth_checkbox"
+                       name="inp">Manejo de plaguicidas</input></label>
+            <label for="inp-9">
+                <input type="checkbox" value="nineth_checkbox"
+                       name="inp">Agricultura de precisión</input></label> 
+                       <!-- Historia de Usuario #14 -->
+        </div><br>
+  
+        <div class="form-control">
+            <label for="comment">
+            <strong>Comentarios o sugerencias:</strong>
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Ingresa aquí tus comentarios o sugerencias">
+            </textarea> <!-- Historia de Usuario #15 -->
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" id="submit" value="submit">
+        <strong>Enviar</strong>
+        </button>
+    </form> <!-- Historia de Usuario #16 -->
+</body>
+</html>
